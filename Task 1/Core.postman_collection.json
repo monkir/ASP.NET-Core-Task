@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "fe6ced5a-842a-4c38-b557-df623a753f02",
+		"name": "Core",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27181032"
+	},
+	"item": [
+		{
+			"name": "Get Admin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5212/api/admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5212",
+					"path": [
+						"api",
+						"admin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\":\"mahin\",\r\n    \"password\":\"123\",\r\n    \"name\":\"Mahin Hossain\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5212/api/admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5212",
+					"path": [
+						"api",
+						"admin"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
