@@ -10,8 +10,7 @@ namespace API.EF.Models
         public string Name { get; set; }
         public int Salary { get; set; }
 
-        [ForeignKey(nameof(Admin))]
-        public int AdminID { get; set; }
-        public virtual Admin Admin { get; set; }
+        public int AdminId { get; set; }
+        public Admin Admin { get; set; }
     }
 }

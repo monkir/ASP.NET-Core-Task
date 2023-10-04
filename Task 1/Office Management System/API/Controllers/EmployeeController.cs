@@ -1,6 +1,6 @@
 ﻿using API.DTO;
-using API.EF;
 using API.EF.Models;
+using API.EF;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -9,130 +9,82 @@ namespace API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class adminController : ControllerBase
+    public class EmployeeController : ControllerBase
     {
         private readonly OMSContext _context;
 
-        public adminController(OMSContext context)
+        public EmployeeController(OMSContext context)
         {
             _context = context;
         }
         [HttpGet]
-        public List<Admin> get()
+        public List<EmployeeDTO> get()
         {
-            return (_context.Admins.ToList());
+            return convert(_context.Employees.ToList());
         }
         [HttpGet]
         [Route("{id}")]
-        public AdminDTO get(int id)
+        public EmployeeDTO get(int id)
         {
-            return convert(_context.Admins.Find(id));
+            return convert(_context.Employees.Find(id));
         }
+
         [HttpGet]
-        [Route("{id}/Employees")]
-        public List<EmployeeDTO> getEmplyee(int id)
+        [Route("{id}/Admin")]
+        public AdminDTO getAdmin(int id)
         {
-            var Obj = _context.Admins.Include(a => a.Employees).Where(a => a.Id == id).SingleOrDefault();
-            var EmpList = Obj.Employees.ToList();
-            return convert(EmpList);
+            var list = _context.Employees.Include(e => e.Admin);
+            var Obj = list.Where(e => e.Id == id).SingleOrDefault();
+            var adminObj = Obj.Admin;
+            return convert(adminObj);
         }
         [HttpDelete]
         [Route("{id}")]
         public ActionResult<string> delete(int id)
         {
-            
+
             try
             {
-                var ExObj = _context.Admins.Find(id);
-                _context.Admins.Remove(ExObj);
+                var ExObj = _context.Employees.Find(id);
+                _context.Employees.Remove(ExObj);
                 _context.SaveChanges();
-                return Ok("The admin is deleted successfully");
+                return Ok("The Employee is deleted successfully");
             }
             catch
             {
-                return NotFound("The admin is not deleted.");
+                return NotFound("The Employee is not deleted.");
             }
         }
         [HttpPost]
-        public ActionResult<string> post([FromBody] AdminDTO obj)
+        public ActionResult<string> post([FromBody] EmployeeDTO obj)
         {
             try
             {
-                _context.Admins.Add(convert(obj));
+                _context.Employees.Add(convert(obj));
                 _context.SaveChanges();
-                return Ok("New admin is added successfully");
+                return Ok("New Employee is added successfully");
             }
             catch
             {
-                return NotFound("New admin is not added.");
+                return NotFound("New Employee is not added.");
             }
-            
+
         }
         [HttpPut]
-        public ActionResult<string> update([FromBody] AdminDTO obj)
+        public ActionResult<string> update([FromBody] EmployeeDTO obj)
         {
             try
             {
-                _context.Admins.Update(convert(obj));
+                _context.Employees.Update(convert(obj));
                 _context.SaveChanges();
-                return Ok("The admin is updated successfully");
+                return Ok("The Employee is updated successfully");
             }
             catch
             {
-                return NotFound("The admin is not updated.");
+                return NotFound("The Employee is not updated.");
             }
-            
-        }
 
-
-        //Admin
-        //Conversion  
-        Admin convert(AdminDTO obj)
-        {
-            Admin convObj = new Admin()
-            {
-                Id = obj.Id,
-                UserName = obj.UserName,
-                Password = obj.Password,
-                Name = obj.Name
-            };
-            return convObj;
         }
-        List<Admin> convert(List<AdminDTO> objList)
-        {
-            var convList = new List<Admin>();
-            foreach (var item in objList)
-            {
-                var convObj = convert(item);
-                convList.Add(convObj);
-            }
-            return convList;
-        }
-        AdminDTO convert(Admin obj)
-        {
-            var convObj = new AdminDTO()
-            {
-                Id = obj.Id,
-                UserName = obj.UserName,
-                Password = obj.Password,
-                Name = obj.Name
-            };
-            return convObj;
-        }
-        List<AdminDTO> convert(List<Admin> objList)
-        {
-            var convList = new List<AdminDTO>();
-            foreach (var item in objList)
-            {
-                var convObj = convert(item);
-                convList.Add(convObj);
-            }
-            return convList;
-        }
-
-    //Employe
-    //Conversion  
-
         Employee convert(EmployeeDTO obj)
         {
             Employee convObj = new Employee()
@@ -172,6 +124,51 @@ namespace API.Controllers
         List<EmployeeDTO> convert(List<Employee> objList)
         {
             var convList = new List<EmployeeDTO>();
+            foreach (var item in objList)
+            {
+                var convObj = convert(item);
+                convList.Add(convObj);
+            }
+            return convList;
+        }
+
+        //Admin
+        //Conversion  
+        Admin convert(AdminDTO obj)
+        {
+            Admin convObj = new Admin()
+            {
+                Id = obj.Id,
+                UserName = obj.UserName,
+                Password = obj.Password,
+                Name = obj.Name
+            };
+            return convObj;
+        }
+        List<Admin> convert(List<AdminDTO> objList)
+        {
+            var convList = new List<Admin>();
+            foreach (var item in objList)
+            {
+                var convObj = convert(item);
+                convList.Add(convObj);
+            }
+            return convList;
+        }
+        AdminDTO convert(Admin obj)
+        {
+            var convObj = new AdminDTO()
+            {
+                Id = obj.Id,
+                UserName = obj.UserName,
+                Password = obj.Password,
+                Name = obj.Name
+            };
+            return convObj;
+        }
+        List<AdminDTO> convert(List<Admin> objList)
+        {
+            var convList = new List<AdminDTO>();
             foreach (var item in objList)
             {
                 var convObj = convert(item);

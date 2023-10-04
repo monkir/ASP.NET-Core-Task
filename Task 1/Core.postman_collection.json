@@ -7,53 +7,298 @@
 	},
 	"item": [
 		{
-			"name": "Get Admin",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:5212/api/admin",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "5212",
-					"path": [
-						"api",
-						"admin"
-					]
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5212/api/admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5212",
+							"path": [
+								"api",
+								"admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5212/api/admin/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5212",
+							"path": [
+								"api",
+								"admin",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Emp List of a Admin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5212/api/admin/1/Employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5212",
+							"path": [
+								"api",
+								"admin",
+								"1",
+								"Employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5212/api/admin/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5212",
+							"path": [
+								"api",
+								"admin",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\":\"mahin\",\r\n    \"password\":\"123\",\r\n    \"name\":\"Mahin Hossain\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5212/api/admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5212",
+							"path": [
+								"api",
+								"admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2\r\n    \"userName\":\"mahir\",\r\n    \"password\":\"123\",\r\n    \"name\":\"Mahir Hossain\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5212/api/admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5212",
+							"path": [
+								"api",
+								"admin"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "Add Admin",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"userName\":\"mahin\",\r\n    \"password\":\"123\",\r\n    \"name\":\"Mahin Hossain\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+			"name": "Employee",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5212/api/Employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5212",
+							"path": [
+								"api",
+								"Employee"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://localhost:5212/api/admin",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "5212",
-					"path": [
-						"api",
-						"admin"
-					]
+				{
+					"name": "Get by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5212/api/Employee/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5212",
+							"path": [
+								"api",
+								"Employee",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin of a Emp",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5212/api/Employee/1/Admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5212",
+							"path": [
+								"api",
+								"Employee",
+								"1",
+								"Admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5212/api/Employee/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5212",
+							"path": [
+								"api",
+								"Employee",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"arafat\",\r\n    \"password\": \"123\",\r\n    \"name\": \"Arafat Hossain\",\r\n    \"salary\": 500,\r\n    \"adminId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5212/api/Employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5212",
+							"path": [
+								"api",
+								"Employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"userName\": \"akash\",\r\n    \"password\": \"123\",\r\n    \"name\": \"Rad Shahamat Akash\",\r\n    \"salary\": 200,\r\n    \"adminId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5212/api/Employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5212",
+							"path": [
+								"api",
+								"Employee"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		}
 	]
 }

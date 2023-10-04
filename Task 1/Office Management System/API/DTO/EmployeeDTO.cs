@@ -11,6 +11,6 @@ namespace API.DTO
         public string Name { get; set; }
         public int Salary { get; set; }
 
-        public int AdminID { get; set; }
+        public int AdminId { get; set; }
     }
 }
