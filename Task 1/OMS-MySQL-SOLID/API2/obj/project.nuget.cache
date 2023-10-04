@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "xyCROX8QI2UyJ7CjAiWEyL+SxlA3j6ILMXY1d8WbyF4H1mQHfnm1TYcxoTOBna+/JlFJ46CfKoyPo4/9k5bB8g==",
+  "success": true,
+  "projectFilePath": "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\Task 1\\OMS-MySQL-SOLID\\API2\\API2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\monki\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\monki\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\monki\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\monki\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\monki\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\monki\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
