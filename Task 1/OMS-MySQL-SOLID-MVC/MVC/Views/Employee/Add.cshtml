@@ -1,0 +1,36 @@
+﻿@model MVC.Models.AddEmployeeDTO
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["Message"]
+    </div>
+}
+
+@Html.ActionLink("Employee Index", "Index", "Employee", new{ area = ""}, new{ @class ="btn btn-danger"} )
+
+<span>@Html.ValidationSummary()</span>
+<span>@(Model != null ? Model.AdminId : "")</span>
+<form method="post" action="">
+    <input type="text" class="form-control" value="@(Model != null ? Model.Name: "")" name="Name" placeholder="Enter name">
+    <span class="text-danger">@Html.ValidationMessage("Name")</span>
+    <input type="text" class="form-control" value="@(Model != null ? Model.UserName: "")" name="UserName" placeholder="Choose username">
+    <span class="text-danger">@Html.ValidationMessage("UserName")</span>
+    <input type="text" class="form-control" value="@(Model != null ? Model.Password: "")" name="Password" placeholder="Choose password">
+    <span class="text-danger">@Html.ValidationMessage("Password")</span>
+    <input type="number" class="form-control" value="@(Model != null ? Model.Salary: "")" name="Salary" placeholder="Choose Salary">
+    <span class="text-danger">@Html.ValidationMessage("Salary")</span>
+    <select name="AdminId"  class="form-control">
+        <option disabled selected></option>
+        @foreach(BLL.DTO.AdminDTO admin in BLL.Services.AdminService.All())
+        {
+            <option value="@admin.Id" >@admin.UserName</option>
+        }
+    </select>
+    <span class="text-danger">@Html.ValidationMessage("AdminID")</span>
+    <input type="submit" class="form-control" value="Add" />
+</form>

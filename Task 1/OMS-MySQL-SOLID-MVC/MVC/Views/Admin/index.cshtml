@@ -1,0 +1,66 @@
+﻿@model List<BLL.DTO.AdminDTO>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["Message"]
+    </div>
+}﻿
+
+<script>
+    const openDeleteModal = function (deleteId) {
+        document.getElementById('deleteform').action = '/Admin/Delete/' + deleteId;
+        document.getElementById('deleteText').innerHTML = "Are you sure to delete employee id " + deleteId + "?";
+    }
+</script>
+@Html.ActionLink("Add Admin", "Add", "Admin", new{ area = ""}, new{ @class ="btn btn-danger"} )
+<table class="table table-bordered">
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>UserName</td>
+        <td>Password</td>
+        <td>Action</td>
+    </tr>
+    @foreach(var admin in Model)
+    {
+        <tr>
+            <td>@admin.Id</td>
+            <td>@admin.Name</td>
+            <td>@admin.UserName</td>
+            <td>@admin.Password</td>
+            <td>
+                <a href="/Admin/Details/@admin.Id" class=" btn btn-info">Details</a>
+                <a href="/Admin/Edit/@admin.Id" class=" btn btn-dark">Edit</a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                        onclick="openDeleteModal(@admin.Id);">
+                    Delete
+                </button>
+            </td>
+        </tr>
+    }
+</table>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="deleteText">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                @*<button type="button" class="btn btn-primary">Understood</button>*@
+                <form action="#" method="post" id="deleteform">
+                    <input class="btn btn-danger" type="submit" value="Confirm" />
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

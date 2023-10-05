@@ -1,0 +1,222 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\AIUB\\Monkir\\Github\\0. Github\\ASP.NET-Core-Task\\Task 1\\OMS-MySQL-SOLID-MVC\\MVC\\MVC.csproj": {}
+  },
+  "projects": {
+    "D:\\AIUB\\Monkir\\Github\\0. Github\\ASP.NET-Core-Task\\Task 1\\OMS-MySQL-SOLID-MVC\\BLL\\BLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\AIUB\\Monkir\\Github\\0. Github\\ASP.NET-Core-Task\\Task 1\\OMS-MySQL-SOLID-MVC\\BLL\\BLL.csproj",
+        "projectName": "BLL",
+        "projectPath": "D:\\AIUB\\Monkir\\Github\\0. Github\\ASP.NET-Core-Task\\Task 1\\OMS-MySQL-SOLID-MVC\\BLL\\BLL.csproj",
+        "packagesPath": "C:\\Users\\muzah\\.nuget\\packages\\",
+        "outputPath": "D:\\AIUB\\Monkir\\Github\\0. Github\\ASP.NET-Core-Task\\Task 1\\OMS-MySQL-SOLID-MVC\\BLL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\muzah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\AIUB\\Monkir\\Github\\0. Github\\ASP.NET-Core-Task\\Task 1\\OMS-MySQL-SOLID-MVC\\DAL\\DAL.csproj": {
+                "projectPath": "D:\\AIUB\\Monkir\\Github\\0. Github\\ASP.NET-Core-Task\\Task 1\\OMS-MySQL-SOLID-MVC\\DAL\\DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\AIUB\\Monkir\\Github\\0. Github\\ASP.NET-Core-Task\\Task 1\\OMS-MySQL-SOLID-MVC\\DAL\\DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\AIUB\\Monkir\\Github\\0. Github\\ASP.NET-Core-Task\\Task 1\\OMS-MySQL-SOLID-MVC\\DAL\\DAL.csproj",
+        "projectName": "DAL",
+        "projectPath": "D:\\AIUB\\Monkir\\Github\\0. Github\\ASP.NET-Core-Task\\Task 1\\OMS-MySQL-SOLID-MVC\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\muzah\\.nuget\\packages\\",
+        "outputPath": "D:\\AIUB\\Monkir\\Github\\0. Github\\ASP.NET-Core-Task\\Task 1\\OMS-MySQL-SOLID-MVC\\DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\muzah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\AIUB\\Monkir\\Github\\0. Github\\ASP.NET-Core-Task\\Task 1\\OMS-MySQL-SOLID-MVC\\MVC\\MVC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\AIUB\\Monkir\\Github\\0. Github\\ASP.NET-Core-Task\\Task 1\\OMS-MySQL-SOLID-MVC\\MVC\\MVC.csproj",
+        "projectName": "MVC",
+        "projectPath": "D:\\AIUB\\Monkir\\Github\\0. Github\\ASP.NET-Core-Task\\Task 1\\OMS-MySQL-SOLID-MVC\\MVC\\MVC.csproj",
+        "packagesPath": "C:\\Users\\muzah\\.nuget\\packages\\",
+        "outputPath": "D:\\AIUB\\Monkir\\Github\\0. Github\\ASP.NET-Core-Task\\Task 1\\OMS-MySQL-SOLID-MVC\\MVC\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\muzah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\AIUB\\Monkir\\Github\\0. Github\\ASP.NET-Core-Task\\Task 1\\OMS-MySQL-SOLID-MVC\\BLL\\BLL.csproj": {
+                "projectPath": "D:\\AIUB\\Monkir\\Github\\0. Github\\ASP.NET-Core-Task\\Task 1\\OMS-MySQL-SOLID-MVC\\BLL\\BLL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
