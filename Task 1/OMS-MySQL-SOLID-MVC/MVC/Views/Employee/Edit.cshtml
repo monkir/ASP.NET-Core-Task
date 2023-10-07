@@ -25,7 +25,7 @@
     <input type="number" class="form-control" value="@(Model != null ? Model.Salary: "")" name="Salary" placeholder="Choose Salary">
     <span class="text-danger">@Html.ValidationMessage("Salary")</span>
     <select name="AdminId"  class="form-control">
-        <option disabled selected></option>
+        <option disabled selected>--Select Admin--</option>
         @foreach(BLL.DTO.AdminDTO admin in BLL.Services.AdminService.All())
         {
             if(Model != null && Model.AdminId == admin.Id)

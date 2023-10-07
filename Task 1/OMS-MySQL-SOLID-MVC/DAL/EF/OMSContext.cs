@@ -9,7 +9,7 @@ namespace DAL.EF
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySQL("server=localhost; port=3306; database=OMS;user=root;password=tiger");
+            optionsBuilder.UseMySQL("server=localhost; port=3500; database=OMS;user=root;password=tiger");
             //optionsBuilder.UseSqlServer("server=MONKIR\\SQLEXPRESS; initial catalog=Office Management System; integrated security=true; TrustServerCertificate=True");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

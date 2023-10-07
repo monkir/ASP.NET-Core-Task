@@ -3775,19 +3775,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\muzah\\.nuget\\packages\\": {}
+    "C:\\Users\\monki\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\AIUB\\Monkir\\Github\\0. Github\\ASP.NET-Core-Task\\Task 1\\OMS-MySQL-SOLID-MVC\\MVC\\MVC.csproj",
+      "projectUniqueName": "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\Task 1\\OMS-MySQL-SOLID-MVC\\MVC\\MVC.csproj",
       "projectName": "MVC",
-      "projectPath": "D:\\AIUB\\Monkir\\Github\\0. Github\\ASP.NET-Core-Task\\Task 1\\OMS-MySQL-SOLID-MVC\\MVC\\MVC.csproj",
-      "packagesPath": "C:\\Users\\muzah\\.nuget\\packages\\",
-      "outputPath": "D:\\AIUB\\Monkir\\Github\\0. Github\\ASP.NET-Core-Task\\Task 1\\OMS-MySQL-SOLID-MVC\\MVC\\obj\\",
+      "projectPath": "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\Task 1\\OMS-MySQL-SOLID-MVC\\MVC\\MVC.csproj",
+      "packagesPath": "C:\\Users\\monki\\.nuget\\packages\\",
+      "outputPath": "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\Task 1\\OMS-MySQL-SOLID-MVC\\MVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\muzah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\monki\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3795,14 +3795,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\AIUB\\Monkir\\Github\\0. Github\\ASP.NET-Core-Task\\Task 1\\OMS-MySQL-SOLID-MVC\\BLL\\BLL.csproj": {
-              "projectPath": "D:\\AIUB\\Monkir\\Github\\0. Github\\ASP.NET-Core-Task\\Task 1\\OMS-MySQL-SOLID-MVC\\BLL\\BLL.csproj"
+            "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\Task 1\\OMS-MySQL-SOLID-MVC\\BLL\\BLL.csproj": {
+              "projectPath": "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\Task 1\\OMS-MySQL-SOLID-MVC\\BLL\\BLL.csproj"
             }
           }
         }
@@ -3847,7 +3848,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

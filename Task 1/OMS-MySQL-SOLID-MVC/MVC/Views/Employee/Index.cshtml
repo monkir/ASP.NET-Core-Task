@@ -36,7 +36,13 @@
             <td>@employee.Password</td>
             <td>@employee.Salary</td>
             <td>
-                <a class="text-black" href="/Admin/Details/@employee.AdminId">@employee.Admin.UserName</a>
+                @if(employee.Admin != null)
+                {
+                    <a class="btn btn-success" href="/Admin/Details/@employee.AdminId">@employee.Admin.UserName</a>
+                }else
+                {
+                    <span class="btn btn-danger">Not assigned</span>
+                }
             </td>
             <td>
                 <a href="/Employee/Details/@employee.Id" class=" btn btn-info">Details</a>
