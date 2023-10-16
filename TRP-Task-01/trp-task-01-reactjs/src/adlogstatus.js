@@ -1,10 +1,10 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-function ViewLogStatus(){
+function AdLogstatus(){
     const [data, getData] = useState();
     useEffect(()=>{
-        axios.get("https://localhost:7133/api/ViewLog/ListOfViewLogStatus")
+        axios.get("https://localhost:7133/api/AdLog/ListOfAdLogStatus")
         .then((res)=>{
             getData(res.data);
             console.log(data);
@@ -23,9 +23,9 @@ function ViewLogStatus(){
                 <thead>
                     <tr>
                         <th style={{border:"2px solid black"}}>serialNo</th>
-                        <th style={{border:"2px solid black"}}>channelID</th>
-                        <th style={{border:"2px solid black"}}>dateFrom</th>
-                        <th style={{border:"2px solid black"}}>dateTo</th>
+                        <td style={{border:"2px solid black"}}>channelID</td>
+                        <td style={{border:"2px solid black"}}>dateFrom</td>
+                        <td style={{border:"2px solid black"}}>dateTo</td>
                     </tr>
                 </thead>
                 <tbody>
@@ -46,4 +46,4 @@ function ViewLogStatus(){
 
     
 }
-export default ViewLogStatus;
+export default AdLogstatus;
