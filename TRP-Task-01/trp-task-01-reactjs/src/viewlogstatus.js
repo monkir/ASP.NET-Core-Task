@@ -23,7 +23,7 @@ function ViewLogStatus(){
                 <thead>
                     <tr>
                         <th style={{border:"2px solid black"}}>serialNo</th>
-                        <th style={{border:"2px solid black"}}>channelID</th>
+                        <th style={{border:"2px solid black"}}>channelName</th>
                         <th style={{border:"2px solid black"}}>dateFrom</th>
                         <th style={{border:"2px solid black"}}>dateTo</th>
                     </tr>
@@ -32,7 +32,7 @@ function ViewLogStatus(){
                     {data != null ? data.map(item=>(
                         <tr key={item.serialNo}>
                             <th style={{border:"2px solid black"}}>{item.serialNo}</th>
-                            <td style={{border:"2px solid black"}}>{item.channelID}</td>
+                            <td style={{border:"2px solid black"}}>{item.channelName}</td>
                             <td style={{border:"2px solid black"}}>{item.dateFrom}</td>
                             <td style={{border:"2px solid black"}}>{item.dateTo}</td>
                         </tr>
@@ -43,7 +43,5 @@ function ViewLogStatus(){
         </div>
         </>
     )
-
-    
 }
 export default ViewLogStatus;

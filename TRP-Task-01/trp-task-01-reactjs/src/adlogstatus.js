@@ -23,7 +23,7 @@ function AdLogstatus(){
                 <thead>
                     <tr>
                         <th style={{border:"2px solid black"}}>serialNo</th>
-                        <td style={{border:"2px solid black"}}>channelID</td>
+                        <td style={{border:"2px solid black"}}>channelName</td>
                         <td style={{border:"2px solid black"}}>dateFrom</td>
                         <td style={{border:"2px solid black"}}>dateTo</td>
                     </tr>
@@ -32,7 +32,7 @@ function AdLogstatus(){
                     {data != null ? data.map(item=>(
                         <tr key={item.serialNo}>
                             <th style={{border:"2px solid black"}}>{item.serialNo}</th>
-                            <td style={{border:"2px solid black"}}>{item.channelID}</td>
+                            <td style={{border:"2px solid black"}}>{item.channelName}</td>
                             <td style={{border:"2px solid black"}}>{item.dateFrom}</td>
                             <td style={{border:"2px solid black"}}>{item.dateTo}</td>
                         </tr>
@@ -43,7 +43,5 @@ function AdLogstatus(){
         </div>
         </>
     )
-
-    
 }
 export default AdLogstatus;

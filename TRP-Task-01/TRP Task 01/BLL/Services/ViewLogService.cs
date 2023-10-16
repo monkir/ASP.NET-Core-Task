@@ -20,49 +20,7 @@ namespace BLL.Services
         {
             return DataAccess.GetViewLog().Get(Id);
         }
-        public static DateOnly GetMinDate()
-        {
-            return DataAccess.GetViewLogSepcialRepo().GetMinDate();
-        }
-        public static DateOnly GetMaxDate()
-        {
-            return DataAccess.GetViewLogSepcialRepo().GetMaxDate();
-        }
-        public static List<DateOnly> GetDistinctDates()
-        {
-            return DataAccess.GetViewLogSepcialRepo().GetDistinctDate();
-        }
-        public static List<ViewLogStatusDTO> GetListOfViewLogStatus2()
-        {
-            var minDate = GetMinDate();
-            var maxDate = GetMaxDate();
-            var DistinctDates = GetDistinctDates();
-            var list = new List<ViewLogStatusDTO>();
-            var d = minDate;
-            int i = 1;
-            while(d < maxDate)
-            {
-                if (DistinctDates.Contains(d) == false)
-                {
-                    d = d.AddDays(1);
-                    continue;
-                }
-                var vls = new ViewLogStatusDTO()
-                {
-                    SerialNo = i++,
-                    DateFrom = d,
-                    DateTo = d,
-                };
-                d = d.AddDays(1);
-                while (DistinctDates.Contains(d))
-                {
-                    vls.DateTo = d;
-                    d = d.AddDays(1);
-                }
-                list.Add(vls);
-            }
-            return list;
-        }
+        // convert List< ViewLogs > to List< ViewLogStatus >
         public static List<ViewLogStatusDTO> VL2VLS(IEnumerable<ViewLog> viewLogs)
         {
             var date = viewLogs.Select(v => DateOnly.FromDateTime(v.StartedWatchingAt.Date));
@@ -73,6 +31,7 @@ namespace BLL.Services
             var d = minDate;
             int i = 1;
             int ChannelId = viewLogs.FirstOrDefault().ChannelId;
+            var ChannelObj = DataAccess.GetChannel().Get(ChannelId);
             while (d < maxDate)
             {
                 if (DistinctDates.Contains(d) == false)
@@ -84,6 +43,7 @@ namespace BLL.Services
                 {
                     SerialNo = i++,
                     DateFrom = d,
+                    ChannelName = ChannelObj.ChannelName,
                     ChannelID = ChannelId,
                     DateTo = d,
                 };
@@ -96,14 +56,6 @@ namespace BLL.Services
                 list.Add(vls);
             }
             return list;
-        }
-        public static List<ViewLog> GetDistTinctByChannelAndDate()
-        {
-            var list = DataAccess.GetViewLog().All();
-            var listOfDistinctByChannelAndDate = list.DistinctBy(l => new { l.ChannelId, l.StartedWatchingAt.Month });
-            return listOfDistinctByChannelAndDate.ToList();
-
-            //return DataAccess.GetViewLogSepcialRepo().GetDistTinctByChannelAndDate();
         }
         public static List<ViewLogStatusDTO> GetListOfViewLogStatus()
         {
@@ -122,12 +74,6 @@ namespace BLL.Services
                 v.SerialNo = i++;
             }
             return VLS_List.ToList();
-
-            //return DataAccess.GetViewLogSepcialRepo().GetDistTinctByChannelAndDate();
-        }
-        public static List<int> GetDistinctChannels()
-        {
-            return DataAccess.GetViewLogSepcialRepo().GetDistinctChannels();
         }
     }
 }

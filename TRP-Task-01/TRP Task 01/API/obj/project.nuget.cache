@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cMwxxpz578JQkeG234v3Eb47i+lAqYHC3w8Hh9ll8Ry/2R5q9/Y4m57rN744KZB44rho9Q6aR6M/I05apnhGcQ==",
+  "dgSpecHash": "YEqrgdehDkiwjZdpbigDKFxXAmtSJqMX+3OMYAkemdo8ZIb8rGyUa/hJdsA53mDqD8FCbOjRMy0v/KzwnBaC4A==",
   "success": true,
-  "projectFilePath": "D:\\aiub\\7. Intern\\TRP Task 01\\API\\API.csproj",
+  "projectFilePath": "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\TRP-Task-01\\TRP Task 01\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\monki\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\monki\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

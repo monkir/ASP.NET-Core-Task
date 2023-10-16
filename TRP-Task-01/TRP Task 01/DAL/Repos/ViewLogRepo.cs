@@ -17,7 +17,7 @@ namespace DAL.Repos
 
         public ViewLog Get(int Id)
         {
-            return db.ViewLogs.Find(Id);
+            return db.ViewLogs.Find((ulong)Id);
         }
 
         public bool Create(ViewLog Obj)

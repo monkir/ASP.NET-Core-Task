@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\aiub\\7. Intern\\TRP Task 01\\API\\API.csproj": {}
+    "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\TRP-Task-01\\TRP Task 01\\API\\API.csproj": {}
   },
   "projects": {
-    "D:\\aiub\\7. Intern\\TRP Task 01\\API\\API.csproj": {
+    "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\TRP-Task-01\\TRP Task 01\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\aiub\\7. Intern\\TRP Task 01\\API\\API.csproj",
+        "projectUniqueName": "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\TRP-Task-01\\TRP Task 01\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\aiub\\7. Intern\\TRP Task 01\\API\\API.csproj",
+        "projectPath": "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\TRP-Task-01\\TRP Task 01\\API\\API.csproj",
         "packagesPath": "C:\\Users\\monki\\.nuget\\packages\\",
-        "outputPath": "D:\\aiub\\7. Intern\\TRP Task 01\\API\\obj\\",
+        "outputPath": "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\TRP-Task-01\\TRP Task 01\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\monki\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\aiub\\7. Intern\\TRP Task 01\\BLL\\BLL.csproj": {
-                "projectPath": "D:\\aiub\\7. Intern\\TRP Task 01\\BLL\\BLL.csproj"
+              "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\TRP-Task-01\\TRP Task 01\\BLL\\BLL.csproj": {
+                "projectPath": "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\TRP-Task-01\\TRP Task 01\\BLL\\BLL.csproj"
               }
             }
           }
@@ -79,14 +79,14 @@
         }
       }
     },
-    "D:\\aiub\\7. Intern\\TRP Task 01\\BLL\\BLL.csproj": {
+    "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\TRP-Task-01\\TRP Task 01\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\aiub\\7. Intern\\TRP Task 01\\BLL\\BLL.csproj",
+        "projectUniqueName": "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\TRP-Task-01\\TRP Task 01\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "D:\\aiub\\7. Intern\\TRP Task 01\\BLL\\BLL.csproj",
+        "projectPath": "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\TRP-Task-01\\TRP Task 01\\BLL\\BLL.csproj",
         "packagesPath": "C:\\Users\\monki\\.nuget\\packages\\",
-        "outputPath": "D:\\aiub\\7. Intern\\TRP Task 01\\BLL\\obj\\",
+        "outputPath": "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\TRP-Task-01\\TRP Task 01\\BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\monki\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -103,8 +103,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\aiub\\7. Intern\\TRP Task 01\\DAL\\DAL.csproj": {
-                "projectPath": "D:\\aiub\\7. Intern\\TRP Task 01\\DAL\\DAL.csproj"
+              "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\TRP-Task-01\\TRP Task 01\\DAL\\DAL.csproj": {
+                "projectPath": "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\TRP-Task-01\\TRP Task 01\\DAL\\DAL.csproj"
               }
             }
           }
@@ -138,14 +138,14 @@
         }
       }
     },
-    "D:\\aiub\\7. Intern\\TRP Task 01\\DAL\\DAL.csproj": {
+    "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\TRP-Task-01\\TRP Task 01\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\aiub\\7. Intern\\TRP Task 01\\DAL\\DAL.csproj",
+        "projectUniqueName": "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\TRP-Task-01\\TRP Task 01\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "D:\\aiub\\7. Intern\\TRP Task 01\\DAL\\DAL.csproj",
+        "projectPath": "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\TRP-Task-01\\TRP Task 01\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\monki\\.nuget\\packages\\",
-        "outputPath": "D:\\aiub\\7. Intern\\TRP Task 01\\DAL\\obj\\",
+        "outputPath": "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\TRP-Task-01\\TRP Task 01\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\monki\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -2620,11 +2620,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\aiub\\7. Intern\\TRP Task 01\\DAL\\DAL.csproj",
+      "projectUniqueName": "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\TRP-Task-01\\TRP Task 01\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "D:\\aiub\\7. Intern\\TRP Task 01\\DAL\\DAL.csproj",
+      "projectPath": "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\TRP-Task-01\\TRP Task 01\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\monki\\.nuget\\packages\\",
-      "outputPath": "D:\\aiub\\7. Intern\\TRP Task 01\\DAL\\obj\\",
+      "outputPath": "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\TRP-Task-01\\TRP Task 01\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\monki\\AppData\\Roaming\\NuGet\\NuGet.Config",

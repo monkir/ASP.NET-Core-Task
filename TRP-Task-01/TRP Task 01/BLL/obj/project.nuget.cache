@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0w7rPnAgodOAjU0OetWckto2Xh7RbXJ/XsS6pIwOk/0m8iceF7eL0eM+9bLtfD7tNSueZwv9g+E2xvGhQo0dKw==",
+  "dgSpecHash": "Wxvh6fe3OMZQM5gRx8DQv9Lgd19MpPllexnzFggHEjMXVL9Q9aIvk4q7tdSFN7p8T4og/kVnA4kXwytc9olizg==",
   "success": true,
-  "projectFilePath": "D:\\aiub\\7. Intern\\TRP Task 01\\BLL\\BLL.csproj",
+  "projectFilePath": "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\TRP-Task-01\\TRP Task 01\\BLL\\BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\monki\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\monki\\.nuget\\packages\\k4os.compression.lz4\\1.3.5\\k4os.compression.lz4.1.3.5.nupkg.sha512",

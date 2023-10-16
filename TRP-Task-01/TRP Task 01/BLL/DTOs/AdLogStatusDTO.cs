@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BLL.DTOs
 {
-    public class ViewLogStatusDTO
+    public class AdLogStatusDTO
     {
         public int SerialNo { get; set; }
         public int ChannelID { get; set; }

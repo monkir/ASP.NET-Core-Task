@@ -36,14 +36,13 @@ namespace API.Controllers
             }
         }
         [HttpGet]
-        [Route("GetDate")]
-        public ActionResult GetDate()
+        [Route("ListOfAdLogStatus")]
+        public ActionResult GetListOfAdLogStatus()
         {
             try
             {
-                var AdMinDate = AdLogService.GetMinDate();
-                var AdMaxDate = AdLogService.GetMaxDate();
-                return Ok(new { AdMinDate, AdMaxDate });
+                var ListOfAdLogStatus = AdLogService.GetListOfAdLogStatus();
+                return Ok(ListOfAdLogStatus);
             }
             catch (Exception ex)
             {

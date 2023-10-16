@@ -12,7 +12,7 @@ namespace DAL
     public class DataAccess
     {
         public static IRepo<AdLog, int, bool> GetAdLog() { return new AdLogRepo(); }
+        public static IRepo<Channel, int, bool> GetChannel() { return new ChannelRepo(); }
         public static IRepo<ViewLog, int, bool> GetViewLog() { return new ViewLogRepo(); }
-        public static ViewLogSepcialRepo GetViewLogSepcialRepo() {  return new ViewLogSepcialRepo(); }
     }
 }

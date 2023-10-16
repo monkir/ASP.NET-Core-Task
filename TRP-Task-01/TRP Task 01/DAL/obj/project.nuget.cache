@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nv/O1enhmhEYMz4rzGszKv7IQpxmzcj2Sf7P5tWvDb6u4jPyOy5QwYWIuML9oERLLRO2cfcV6GQNB3gpw2bYPw==",
+  "dgSpecHash": "y4xhd6lv49cA6vUA3Dp5Db0CnQxRZ5s+k1mDkcmigy6fK8SuZ2V9S4XM3yYcFncXv7JMjggL3WWIjRXEZ0bDMA==",
   "success": true,
-  "projectFilePath": "D:\\aiub\\7. Intern\\TRP Task 01\\DAL\\DAL.csproj",
+  "projectFilePath": "D:\\aiub\\0. Github\\ASP.NET-Core-Task\\TRP-Task-01\\TRP Task 01\\DAL\\DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\monki\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\monki\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
